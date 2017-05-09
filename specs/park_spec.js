@@ -20,4 +20,9 @@ describe("Park", function() {
     assert.equal(0, park.enclosure.length);
   });
 
+  it("can add a dinosaur to the enclosure", function() {
+    park.addDinosaur(dinosaur1);
+    assert.equal(1, park.enclosure.length);
+  });
+
 });

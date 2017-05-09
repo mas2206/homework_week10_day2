@@ -17,6 +17,16 @@ Park.prototype = {
     }
   },
 
-}
+  returnDinosaursWithOffspringGreaterThan2: function() {
+    var dinosOffspringMoreThan2 = [];
+    for (var dinosaur of this.enclosure) {
+      if (dinosaur.offspring > 2) {
+        dinosOffspringMoreThan2.push(dinosaur);
+      }
+      return dinosOffspringMoreThan2;
+    }
+  }
+
+};
 
 module.exports = Park;

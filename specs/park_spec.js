@@ -39,4 +39,13 @@ describe("Park", function() {
     assert.equal(3, park.enclosure.length);
   });
 
+  it("can return all dinosaurs with offspring count higher than 2", function() {
+    park.addDinosaur(dinosaur1);
+    park.addDinosaur(dinosaur2);
+    park.addDinosaur(dinosaur3);
+    park.addDinosaur(dinosaur4);
+    park.addDinosaur(dinosaur5);
+    assert.equal(4, park.returnDinosaursWithOffspringGreaterThan2().length);
+  });
+
 });

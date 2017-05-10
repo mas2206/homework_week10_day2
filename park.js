@@ -23,8 +23,8 @@ Park.prototype = {
       if (dinosaur.offspring > 2) {
         dinosOffspringMoreThan2.push(dinosaur);
       }
-      return dinosOffspringMoreThan2;
     }
+    return dinosOffspringMoreThan2;
   }
 
 };
